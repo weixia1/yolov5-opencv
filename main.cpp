@@ -13,7 +13,7 @@
 void detect_video() {
 	
 	std::string weight_path = "yolov5s.onnx";
-	std::string img_path = "001.mp4"; //
+	std::string img_path = "001.mp4";
 	std::string classname_path = "coco.names";
 	
 	Config config = { 0.3f, 0.3f, weight_path, classname_path, cv::Size(640, 640)};
