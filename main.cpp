@@ -12,7 +12,7 @@
 
 void detect_video() {
 	
-	std::string weight_path = "yolov5s.onnx";
+	std::string weight_path = "yolov5n.onnx";
 	std::string img_path = "001.mp4";
 	std::string classname_path = "coco.names";
 	
@@ -55,7 +55,7 @@ void detect_video() {
 }
 
 void detect_img() {
-	std::string weight_path = "yolov5s.onnx";
+	std::string weight_path = "yolov5n.onnx";
 	std::string img_path = "bus.jpg"; 
 	std::string classname_path = "coco.names";
 
