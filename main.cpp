@@ -1,5 +1,4 @@
-﻿// yolov5-onnx-opencv-noscale.cpp : 
-// Demo use Opencv + onnx 
+// Demo use Opencv
 
 #include <ctime>
 #include <string>
@@ -13,9 +12,9 @@
 
 void detect_video() {
 	
-	std::string weight_path = "E:\\model\\yolov5\\yolov5s.onnx";
-	std::string img_path = "E:\\data\\001.mp4"; //
-	std::string classname_path = "E:\\model\\names\\coco.names";
+	std::string weight_path = "yolov5s.onnx";
+	std::string img_path = "001.mp4"; //
+	std::string classname_path = "coco.names";
 	
 	Config config = { 0.3f, 0.3f, weight_path, classname_path, cv::Size(640, 640)};
 	std::cout << "Start main process" << std::endl;
@@ -56,9 +55,9 @@ void detect_video() {
 }
 
 void detect_img() {
-	std::string weight_path = "E:\\model\\yolov5\\yolov5s.onnx";
-	std::string img_path = "E:\\data\\1.jpg"; 
-	std::string classname_path = "E:\\model\\names\\coco.names";
+	std::string weight_path = "yolov5s.onnx";
+	std::string img_path = "bus.jpg"; 
+	std::string classname_path = "coco.names";
 
 	cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
 
